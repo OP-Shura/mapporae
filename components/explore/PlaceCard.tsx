@@ -24,9 +24,9 @@ export function PlaceCard({ place, isSelected, onSelect, onOpenSaveModal }: Plac
   return (
     <div
       onClick={() => onSelect(place)}
-      className={`glass-card group relative flex flex-col sm:flex-row items-stretch gap-3.5 rounded-2xl p-3.5 transition-all duration-300 cursor-pointer ${
+      className={`liquid-glass-card group relative flex flex-col sm:flex-row items-stretch gap-3.5 rounded-2xl p-3.5 transition-all duration-300 cursor-pointer ${
         isSelected
-          ? 'border-[#0E7490] dark:border-[#38BDF8] bg-[#E0F2FE]/40 dark:bg-[#38BDF8]/15 shadow-lg ring-2 ring-[#0E7490]/30 scale-[1.01]'
+          ? 'border-[#0E7490] dark:border-[#38BDF8] bg-[#E0F2FE]/50 dark:bg-[#38BDF8]/20 shadow-lg ring-2 ring-[#0E7490]/30 scale-[1.01]'
           : 'hover:border-[#0E7490] dark:hover:border-[#38BDF8] hover:shadow-md hover:-translate-y-0.5'
       }`}
     >

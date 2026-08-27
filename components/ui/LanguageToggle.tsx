@@ -9,7 +9,7 @@ interface LanguageToggleProps {
   variant?: 'button' | 'compact';
 }
 
-export function LanguageToggle({ className = '', variant = 'button' }: LanguageToggleProps) {
+export function LanguageToggle({ className = '', variant = 'compact' }: LanguageToggleProps) {
   const { language, toggleLanguage, isHindi } = useLanguage();
 
   if (variant === 'compact') {
@@ -17,7 +17,7 @@ export function LanguageToggle({ className = '', variant = 'button' }: LanguageT
       <button
         type="button"
         onClick={toggleLanguage}
-        className={`flex h-8 items-center gap-1 rounded-full px-2 text-xs font-bold text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors ${className}`}
+        className={`flex h-9 items-center gap-1.5 rounded-full border border-[#E8D9C0] dark:border-slate-700/80 bg-white/80 dark:bg-slate-800/80 px-2.5 text-xs font-bold text-slate-800 dark:text-slate-200 hover:border-[#0E7490] dark:hover:border-[#38BDF8] hover:bg-white dark:hover:bg-slate-700 transition-all shadow-xs ${className}`}
         aria-label="Toggle language between English and Hindi"
         title="Toggle language (English / हिन्दी)"
       >
@@ -31,7 +31,7 @@ export function LanguageToggle({ className = '', variant = 'button' }: LanguageT
     <button
       type="button"
       onClick={toggleLanguage}
-      className={`flex items-center gap-1.5 rounded-full border border-[#E8D9C0] dark:border-slate-700 bg-[#FAF6EF] dark:bg-slate-900 px-3 py-1.5 text-xs font-semibold text-[#172554] dark:text-slate-200 shadow-xs hover:border-[#0E7490] hover:bg-white dark:hover:bg-slate-800 transition-all ${className}`}
+      className={`flex h-9 items-center gap-1.5 rounded-full border border-[#E8D9C0] dark:border-slate-700 bg-white/80 dark:bg-slate-800/80 px-3 text-xs font-bold text-slate-800 dark:text-slate-200 shadow-xs hover:border-[#0E7490] dark:hover:border-[#38BDF8] hover:bg-white dark:hover:bg-slate-700 transition-all ${className}`}
       aria-label="Toggle language between English and Hindi"
       title="Switch Language: English / हिन्दी"
     >

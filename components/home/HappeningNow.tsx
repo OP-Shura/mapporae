@@ -27,7 +27,7 @@ export function HappeningNow() {
         {EVENT_SCHEDULES_CONFIG.map(event => (
           <div
             key={event.id}
-            className="glass-card glass-card-interactive group relative flex flex-col justify-between overflow-hidden rounded-3xl p-6 transition-all duration-300 hover:-translate-y-1.5"
+            className="liquid-glass-card group relative flex flex-col justify-between overflow-hidden rounded-3xl p-6 transition-all duration-300 hover:-translate-y-1.5"
           >
             {/* Ambient Background Warm Glow */}
             <div className="pointer-events-none absolute -right-12 -bottom-12 h-36 w-36 rounded-full bg-gradient-to-br from-amber-400/20 to-orange-400/10 blur-2xl group-hover:scale-125 transition-transform" />

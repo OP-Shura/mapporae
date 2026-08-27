@@ -51,7 +51,7 @@ export function AirQualityCard({ initialData }: { initialData?: AirQualityData }
   };
 
   return (
-    <div className="glass-card glass-card-interactive relative overflow-hidden rounded-3xl p-5.5 sm:p-6 transition-all duration-300">
+    <div className="liquid-glass-card relative overflow-hidden rounded-3xl p-5.5 sm:p-6 transition-all duration-300">
       {/* Ambient AQI Status Glow */}
       <div
         className={`pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gradient-to-br ${getAmbientGlow(

@@ -51,7 +51,7 @@ export function FeaturedPlaces({ places }: FeaturedPlacesProps) {
           return (
             <div
               key={place.id}
-              className="glass-card glass-card-interactive group relative flex flex-col overflow-hidden rounded-3xl transition-all duration-300 hover:-translate-y-2"
+              className="liquid-glass-card group relative flex flex-col overflow-hidden rounded-3xl transition-all duration-300 hover:-translate-y-2"
             >
               {/* Image & Badges with Frosted Overlays */}
               <div className="relative h-52 w-full overflow-hidden bg-slate-900">

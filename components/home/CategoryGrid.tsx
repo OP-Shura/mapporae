@@ -72,7 +72,7 @@ export function CategoryGrid() {
             <Link
               key={cat.id}
               href={`/explore?category=${cat.id}`}
-              className="glass-card glass-card-interactive group relative flex flex-col justify-between overflow-hidden rounded-2xl p-4.5 transition-all duration-300 hover:-translate-y-1.5"
+              className="liquid-glass-card group relative flex flex-col justify-between overflow-hidden rounded-2xl p-4.5 transition-all duration-300 hover:-translate-y-1.5"
             >
               {/* Subtle dynamic corner glow on hover matching category */}
               <div

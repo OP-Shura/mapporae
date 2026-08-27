@@ -20,7 +20,8 @@ import {
   LocateFixed, 
   Check, 
   PhoneCall,
-  Footprints
+  Footprints,
+  Sparkles
 } from 'lucide-react';
 
 const emptySubscribe = () => () => {};
@@ -51,29 +52,39 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full glass-nav transition-all">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
-        {/* Brand & Location */}
-        <div className="flex items-center gap-3">
+    <header className="sticky top-0 z-40 w-full border-b border-[#E8D9C0] dark:border-slate-800/80 bg-[#FAF9F6]/90 dark:bg-[#080D1A]/90 backdrop-blur-xl transition-colors">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
+        
+        {/* ================================================================= */}
+        {/* 1. Left: Brand & Location Selector                                */}
+        {/* ================================================================= */}
+        <div className="flex items-center gap-3.5">
           <Logo size="md" />
 
-          {/* Active Varanasi Location Pill */}
-          <div className="relative hidden md:block">
+          {/* Reference Location Pill */}
+          <div className="relative hidden lg:block">
             <button
               type="button"
               onClick={() => setIsLocationDropdownOpen(!isLocationDropdownOpen)}
-              className="flex items-center gap-1.5 rounded-full border border-[#E8D9C0] dark:border-slate-700 bg-[#FAF6EF] dark:bg-slate-900 px-3 py-1.5 text-xs font-medium text-[#172554] dark:text-slate-200 shadow-xs hover:border-[#0E7490] hover:bg-white dark:hover:bg-slate-800 transition-all"
+              className="flex h-9 items-center gap-2 rounded-full border border-[#E8D9C0] dark:border-slate-700/80 bg-white/80 dark:bg-slate-800/80 px-3 text-xs font-semibold text-slate-800 dark:text-slate-200 shadow-2xs hover:border-[#0E7490] dark:hover:border-[#38BDF8] hover:bg-white dark:hover:bg-slate-700 transition-all"
             >
-              <MapPin className="w-3.5 h-3.5 text-[#0E7490] dark:text-[#38BDF8]" />
-              <span className="max-w-[140px] truncate">{locationName}</span>
+              <div className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#0E7490] dark:bg-[#38BDF8] opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#0E7490] dark:bg-[#38BDF8]" />
+              </div>
+              <MapPin className="w-3.5 h-3.5 text-[#0E7490] dark:text-[#38BDF8] shrink-0" />
+              <span className="max-w-[125px] truncate font-medium text-slate-700 dark:text-slate-200">
+                {locationName}
+              </span>
               <ChevronDown className="w-3 h-3 text-slate-400" />
             </button>
 
             {/* Location Selector Dropdown */}
             {isLocationDropdownOpen && (
-              <div className="absolute left-0 top-full mt-2 w-64 rounded-xl border border-[#E8D9C0] dark:border-slate-700 bg-[#FAF9F6] dark:bg-slate-900 p-3 shadow-xl z-50 animate-in fade-in zoom-in-95 duration-150">
-                <div className="flex items-center justify-between pb-2 border-b border-[#E8D9C0] dark:border-slate-800">
-                  <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+              <div className="absolute left-0 top-full mt-2 w-72 rounded-2xl border border-[#E8D9C0] dark:border-slate-700 bg-white dark:bg-slate-900 p-3 shadow-2xl z-50 animate-spring-pop backdrop-blur-2xl">
+                <div className="flex items-center justify-between pb-2 border-b border-[#E8D9C0]/80 dark:border-slate-800">
+                  <span className="flex items-center gap-1 text-[11px] font-bold text-[#0E7490] dark:text-[#38BDF8] uppercase tracking-wider">
+                    <Sparkles className="w-3 h-3 text-[#F59E0B]" />
                     {t('nav.reference_spot')}
                   </span>
                   <button
@@ -82,14 +93,14 @@ export function Navbar() {
                       setIsLocationDropdownOpen(false);
                     }}
                     disabled={isLocating}
-                    className="flex items-center gap-1 text-xs font-semibold text-[#0E7490] dark:text-[#38BDF8] hover:underline"
+                    className="flex items-center gap-1 text-xs font-bold text-[#0E7490] dark:text-[#38BDF8] hover:underline"
                   >
                     <LocateFixed className={`w-3.5 h-3.5 ${isLocating ? 'animate-spin' : ''}`} />
-                    GPS
+                    <span>GPS</span>
                   </button>
                 </div>
 
-                <div className="mt-2 space-y-1">
+                <div className="mt-2 space-y-1 max-h-56 overflow-y-auto pr-1">
                   {presets.map(p => {
                     const isSelected =
                       Math.abs(userLocation.lat - p.coordinates.lat) < 0.001 &&
@@ -102,10 +113,10 @@ export function Navbar() {
                           setUserCoords(p.coordinates, p.name);
                           setIsLocationDropdownOpen(false);
                         }}
-                        className={`w-full flex items-center justify-between px-2 py-1.5 rounded-lg text-xs text-left transition-colors ${
+                        className={`w-full flex items-center justify-between px-2.5 py-2 rounded-xl text-xs text-left transition-all ${
                           isSelected
-                            ? 'bg-[#E0F2FE] dark:bg-slate-800 font-semibold text-[#0E7490] dark:text-[#38BDF8]'
-                            : 'hover:bg-slate-200/60 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300'
+                            ? 'bg-[#E0F2FE] dark:bg-cyan-950/80 font-bold text-[#0E7490] dark:text-[#38BDF8]'
+                            : 'hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300'
                         }`}
                       >
                         <span className="truncate">{p.name}</span>
@@ -119,7 +130,9 @@ export function Navbar() {
           </div>
         </div>
 
-        {/* Desktop Nav Links */}
+        {/* ================================================================= */}
+        {/* 2. Center: Clean Minimal Navigation Tabs                          */}
+        {/* ================================================================= */}
         <nav className="hidden md:flex items-center gap-1">
           {navLinks.map(link => {
             const isActive = pathname === link.href || (link.href !== '/' && pathname?.startsWith(link.href));
@@ -127,15 +140,21 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition-all ${
+                className={`relative flex h-9 items-center gap-1.5 rounded-full px-3.5 text-xs font-bold transition-all ${
                   isActive
-                    ? 'bg-[#E0F2FE] dark:bg-slate-800 text-[#0E7490] dark:text-[#38BDF8] font-semibold'
-                    : 'text-slate-700 dark:text-slate-300 hover:bg-[#FAF6EF] dark:hover:bg-slate-800/60 hover:text-[#172554] dark:hover:text-white'
+                    ? 'bg-[#0E7490] text-white shadow-xs dark:bg-[#38BDF8] dark:text-slate-950'
+                    : 'text-slate-700 dark:text-slate-300 hover:text-[#0E7490] dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/60'
                 }`}
               >
-                {link.label}
+                <span>{link.label}</span>
                 {link.badge !== undefined && (
-                  <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-[#F59E0B] px-1 text-[11px] font-bold text-white shadow-xs">
+                  <span
+                    className={`flex h-4 min-w-4 items-center justify-center rounded-full px-1 text-[10px] font-black shadow-2xs ${
+                      isActive
+                        ? 'bg-amber-400 text-slate-950'
+                        : 'bg-[#F59E0B] text-white'
+                    }`}
+                  >
                     {link.badge}
                   </span>
                 )}
@@ -144,31 +163,37 @@ export function Navbar() {
           })}
         </nav>
 
-        {/* Actions & Toggles */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
+        {/* ================================================================= */}
+        {/* 3. Right: Unified Action Controls & Tools                         */}
+        {/* ================================================================= */}
+        <div className="flex items-center gap-2">
+          {/* Quick Search */}
+          <Link
+            href="/explore"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-[#E8D9C0] dark:border-slate-700/80 bg-white/80 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:border-[#0E7490] dark:hover:border-[#38BDF8] hover:text-[#0E7490] dark:hover:text-[#38BDF8] hover:bg-white dark:hover:bg-slate-700 transition-all shadow-xs"
+            title="Search Places & Services"
+            aria-label="Search Places & Services"
+          >
+            <Search className="w-4 h-4" />
+          </Link>
+
           {/* Language Toggle */}
           <LanguageToggle variant="compact" />
 
-          {/* Dark Mode Theme Toggle */}
+          {/* Theme Toggle */}
           <ThemeToggle variant="compact" />
 
-          <Link
-            href="/explore"
-            className="flex items-center gap-1.5 rounded-full border border-[#0E7490]/30 dark:border-cyan-800 bg-white dark:bg-slate-900 px-3 py-1.5 text-xs font-semibold text-[#0E7490] dark:text-[#38BDF8] hover:bg-[#E0F2FE]/50 dark:hover:bg-slate-800 transition-colors shadow-xs"
-          >
-            <Search className="w-3.5 h-3.5" />
-            <span className="hidden lg:inline">{t('nav.search')}</span>
-          </Link>
-
+          {/* Emergency 112 Help Button */}
           <Link
             href="/services"
-            className="flex items-center gap-1.5 rounded-full bg-gradient-to-r from-red-600 to-rose-600 px-3 py-1.5 text-xs font-semibold text-white shadow-xs hover:shadow-md transition-all hover:scale-[1.02]"
+            className="flex h-9 items-center gap-1.5 rounded-full bg-red-600 hover:bg-red-700 text-white px-3.5 text-xs font-bold shadow-xs hover:shadow-md transition-all hover:scale-103 active:scale-95"
             title={t('emergency.title')}
           >
-            <PhoneCall className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">{t('nav.emergency')}</span>
+            <PhoneCall className="w-3.5 h-3.5 animate-pulse" />
+            <span className="hidden sm:inline">112 Help</span>
           </Link>
 
+          {/* User Sign In / Profile Menu */}
           <UserMenu />
         </div>
       </div>

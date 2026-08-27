@@ -7,7 +7,7 @@
   --card-bg: #FFFFFF;
   --card-border: #E8D9C0;
   
-  /* Brand Tokens */
+  /* Brand Tokens - Royal Kashi Palette */
   --brand-indigo: #172554;
   --brand-indigo-light: #1E3A8A;
   --ganga-blue: #0E7490;
@@ -23,9 +23,9 @@
 }
 
 .dark {
-  --background: #0B1120;
+  --background: #080D1A;
   --foreground: #F8FAFC;
-  --card-bg: #131E32;
+  --card-bg: #0F172A;
   --card-border: #1E293B;
   
   /* Brand Tokens in Dark Mode */
@@ -35,7 +35,7 @@
   --ganga-blue-light: #1E293B;
   --ganga-blue-dark: #0284C7;
   --sandstone: #1E293B;
-  --sandstone-light: #162032;
+  --sandstone-light: #131E32;
   --sandstone-border: #334155;
   --sandstone-dark: #475569;
   --marigold: #FBBF24;
@@ -63,19 +63,19 @@ body {
   color: var(--foreground);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   overflow-x: hidden;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-track {
   background: #FAF6EF;
 }
 .dark ::-webkit-scrollbar-track {
-  background: #0B1120;
+  background: #080D1A;
 }
 ::-webkit-scrollbar-thumb {
   background: #D8C3A5;
@@ -91,13 +91,57 @@ body {
   background: #38BDF8;
 }
 
-/* Keyframe Animations */
+/* ========================================================================= */
+/* Keyframe Animations: Boat, Oars, Water Wake & Specular Shimmers           */
+/* ========================================================================= */
+
+@keyframes boat-sway {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-2.5px) rotate(-1.5deg);
+  }
+  75% {
+    transform: translateY(2.5px) rotate(1.5deg);
+  }
+}
+
+@keyframes oar-row-left {
+  0%, 100% {
+    transform: rotate(20deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(-35deg) translate(-2px, 3px);
+  }
+}
+
+@keyframes oar-row-right {
+  0%, 100% {
+    transform: rotate(-20deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(35deg) translate(2px, 3px);
+  }
+}
+
+@keyframes water-wake-expand {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
 @keyframes float-slow {
   0%, 100% {
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-12px) scale(1.03);
+    transform: translateY(-14px) scale(1.04);
   }
 }
 
@@ -106,7 +150,7 @@ body {
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(12px) scale(0.97);
+    transform: translateY(14px) scale(0.96);
   }
 }
 
@@ -151,16 +195,188 @@ body {
   }
 }
 
-@keyframes halo-glow {
-  0%, 100% {
-    box-shadow: 0 0 15px rgba(14, 116, 144, 0.25), 0 0 30px rgba(245, 158, 11, 0.15);
+@keyframes liquid-specular {
+  0% {
+    opacity: 0.4;
+    transform: translateX(-100%) rotate(25deg);
   }
   50% {
-    box-shadow: 0 0 25px rgba(14, 116, 144, 0.4), 0 0 45px rgba(245, 158, 11, 0.25);
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateX(200%) rotate(25deg);
   }
 }
 
-/* Ambient Animation Classes */
+/* ========================================================================= */
+/* Liquid Glass Architecture & Specular Highlights                           */
+/* ========================================================================= */
+
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(232, 217, 192, 0.7);
+  box-shadow: 
+    0 10px 30px -5px rgba(23, 37, 84, 0.07),
+    0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+}
+
+.dark .liquid-glass {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  box-shadow: 
+    0 10px 30px -5px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+.liquid-glass-nav {
+  background: rgba(255, 253, 249, 0.82);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border-bottom: 1px solid rgba(232, 217, 192, 0.8);
+  box-shadow: 
+    0 4px 20px -2px rgba(23, 37, 84, 0.04),
+    0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
+}
+
+.dark .liquid-glass-nav {
+  background: rgba(8, 13, 26, 0.82);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border-bottom: 1px solid rgba(30, 41, 59, 0.8);
+  box-shadow: 
+    0 4px 20px -2px rgba(0, 0, 0, 0.5),
+    0 1px 0 0 rgba(255, 255, 255, 0.06) inset;
+}
+
+.liquid-glass-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  border: 1px solid rgba(232, 217, 192, 0.75);
+  box-shadow: 
+    0 10px 25px -3px rgba(23, 37, 84, 0.05),
+    0 0 0 1px rgba(255, 255, 255, 0.7) inset;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.dark .liquid-glass-card {
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(16px) saturate(170%);
+  -webkit-backdrop-filter: blur(16px) saturate(170%);
+  border: 1px solid rgba(51, 65, 85, 0.65);
+  box-shadow: 
+    0 10px 25px -3px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+.liquid-glass-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  border-color: #0E7490;
+  box-shadow: 
+    0 20px 35px -5px rgba(14, 116, 144, 0.18),
+    0 8px 16px -2px rgba(245, 158, 11, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.85) inset;
+}
+
+.dark .liquid-glass-card:hover {
+  border-color: #38BDF8;
+  box-shadow: 
+    0 20px 35px -5px rgba(56, 189, 248, 0.22),
+    0 8px 16px -2px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+}
+
+.liquid-glass-pill {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(232, 217, 192, 0.8);
+  box-shadow: 0 2px 8px rgba(23, 37, 84, 0.04), 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.liquid-glass-pill:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: scale(1.05);
+  border-color: #0E7490;
+  box-shadow: 0 4px 14px rgba(14, 116, 144, 0.15);
+}
+
+.dark .liquid-glass-pill {
+  background: rgba(30, 41, 59, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.08) inset;
+}
+
+.dark .liquid-glass-pill:hover {
+  background: rgba(30, 41, 59, 0.95);
+  border-color: #38BDF8;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.2);
+}
+
+/* ========================================================================= */
+/* Vintage Kashi / Heritage Styling & Filigree                               */
+/* ========================================================================= */
+
+.vintage-arch-motif {
+  background-image: radial-gradient(circle at 50% -20%, rgba(217, 119, 6, 0.12) 0%, transparent 65%);
+}
+
+.dark .vintage-arch-motif {
+  background-image: radial-gradient(circle at 50% -20%, rgba(251, 191, 36, 0.1) 0%, transparent 65%);
+}
+
+.vintage-gold-border {
+  border: 1px solid #D97706;
+  box-shadow: 0 0 12px rgba(217, 119, 6, 0.2);
+}
+
+/* Shimmer Typography */
+.shimmer-text {
+  background: linear-gradient(90deg, #0E7490 0%, #D97706 35%, #F59E0B 65%, #0E7490 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer-sweep 6s linear infinite;
+}
+
+.dark .shimmer-text {
+  background: linear-gradient(90deg, #38BDF8 0%, #FBBF24 35%, #F59E0B 65%, #38BDF8 100%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer-sweep 6s linear infinite;
+}
+
+/* Boat & Water Animation Classes */
+.animate-boat-sway {
+  animation: boat-sway 3.2s ease-in-out infinite;
+}
+
+.animate-oar-left {
+  animation: oar-row-left 1.4s ease-in-out infinite;
+  transform-origin: 80% 30%;
+}
+
+.animate-oar-right {
+  animation: oar-row-right 1.4s ease-in-out infinite;
+  transform-origin: 20% 30%;
+}
+
+.animate-water-wake {
+  animation: water-wake-expand 1.8s ease-out infinite;
+}
+
 .animate-float-slow {
   animation: float-slow 8s ease-in-out infinite;
 }
@@ -174,135 +390,26 @@ body {
 }
 
 .animate-spin-slow {
-  animation: spin-slow 20s linear infinite;
+  animation: spin-slow 22s linear infinite;
 }
 
 .animate-spring-pop {
   animation: spring-pop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-.animate-halo-glow {
-  animation: halo-glow 4s ease-in-out infinite;
-}
-
-/* Glassmorphic Utilities */
-.glass-panel {
-  background: rgba(250, 246, 239, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(232, 217, 192, 0.7);
-}
-
-.dark .glass-panel {
-  background: rgba(19, 30, 50, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(51, 65, 85, 0.7);
-}
-
-.glass-nav {
-  background: rgba(255, 253, 249, 0.85);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(232, 217, 192, 0.8);
-}
-
-.dark .glass-nav {
-  background: rgba(11, 17, 32, 0.85);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(30, 41, 59, 0.8);
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(232, 217, 192, 0.8);
-  box-shadow: 0 4px 20px -2px rgba(23, 37, 84, 0.05);
-}
-
-.dark .glass-card {
-  background: rgba(19, 30, 50, 0.82);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(51, 65, 85, 0.7);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.3);
-}
-
-.glass-card-interactive {
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.glass-card-interactive:hover {
-  transform: translateY(-4px) scale(1.01);
-  border-color: #0E7490;
-  box-shadow: 0 16px 32px -4px rgba(14, 116, 144, 0.18), 0 6px 16px -2px rgba(245, 158, 11, 0.12);
-}
-
-.dark .glass-card-interactive:hover {
-  border-color: #38BDF8;
-  box-shadow: 0 16px 32px -4px rgba(56, 189, 248, 0.2), 0 6px 16px -2px rgba(0, 0, 0, 0.4);
-}
-
-.glass-pill {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(232, 217, 192, 0.8);
-  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.glass-pill:hover {
-  background: rgba(255, 255, 255, 0.95);
-  transform: scale(1.04);
-  border-color: #0E7490;
-}
-
-.dark .glass-pill {
-  background: rgba(30, 41, 59, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(51, 65, 85, 0.8);
-}
-
-.dark .glass-pill:hover {
-  background: rgba(30, 41, 59, 0.95);
-  border-color: #38BDF8;
-}
-
-/* Shimmer Effect */
-.shimmer-text {
-  background: linear-gradient(90deg, #0E7490 0%, #F59E0B 50%, #0E7490 100%);
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shimmer-sweep 5s linear infinite;
-}
-
-.dark .shimmer-text {
-  background: linear-gradient(90deg, #38BDF8 0%, #FBBF24 50%, #38BDF8 100%);
-  background-size: 200% auto;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shimmer-sweep 5s linear infinite;
-}
-
-/* Leaflet Map Overrides for Brand Harmony */
+/* Leaflet Map Overrides */
 .leaflet-popup-content-wrapper {
   background: #FAF6EF !important;
   color: #172554 !important;
-  border-radius: 1rem !important;
-  box-shadow: 0 12px 28px -5px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 16px 36px -5px rgba(0, 0, 0, 0.28) !important;
   border: 1px solid #E8D9C0 !important;
   padding: 0 !important;
   overflow: hidden !important;
 }
 
 .dark .leaflet-popup-content-wrapper {
-  background: #131E32 !important;
+  background: #0F172A !important;
   color: #F8FAFC !important;
   border: 1px solid #334155 !important;
 }
@@ -317,10 +424,10 @@ body {
 }
 
 .dark .leaflet-popup-tip {
-  background: #131E32 !important;
+  background: #0F172A !important;
 }
 
 .leaflet-container {
   font-family: inherit !important;
-  background-color: #0B1120 !important;
+  background-color: #080D1A !important;
 }

@@ -61,7 +61,7 @@ export function WeatherCard({ initialData }: { initialData?: WeatherData }) {
   };
 
   return (
-    <div className="glass-card glass-card-interactive relative overflow-hidden rounded-3xl p-5.5 sm:p-6 transition-all duration-300">
+    <div className="liquid-glass-card relative overflow-hidden rounded-3xl p-5.5 sm:p-6 transition-all duration-300">
       {/* Soft Ambient Weather Backlight */}
       <div className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-[#E0F2FE]/70 dark:bg-cyan-900/30 blur-2xl animate-pulse-subtle" />
       <div className="pointer-events-none absolute -left-10 -bottom-10 h-36 w-36 rounded-full bg-[#FEF3C7]/60 dark:bg-amber-950/20 blur-2xl" />

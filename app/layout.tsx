@@ -10,6 +10,7 @@ import { Footer } from '@/components/layout/Footer';
 import { PWARegister } from '@/components/pwa/PWARegister';
 import { KashiMitraChat } from '@/components/chat/KashiMitraChat';
 import { ScrollToTop } from '@/components/ui/ScrollToTop';
+import { ScrollGangaBoat } from '@/components/interactive/ScrollGangaBoat';
 
 export const metadata: Metadata = {
   title: 'Mapporae — Your Varanasi City Guide, Made Simple',
@@ -66,6 +67,7 @@ export default function RootLayout({
                 <PWARegister />
                 <KashiMitraChat />
                 <ScrollToTop />
+                <ScrollGangaBoat />
               </SavedPlacesProvider>
             </LocationProvider>
           </LanguageProvider>
