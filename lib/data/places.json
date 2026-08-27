@@ -1,0 +1,614 @@
+[
+  {
+    "id": "dashashwamedh-ghat",
+    "name": "Dashashwamedh Ghat",
+    "hindiName": "दशाश्वमेध घाट",
+    "category": "ghats",
+    "subCategory": "Main Riverfront Ghat",
+    "address": "Dashashwamedh Ghat Road, Bangali Tola, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3072,
+      "lng": 83.0104
+    },
+    "description": "The heartbeat of Varanasi’s riverfront. Mythologically associated with Lord Brahma’s 10-horse sacrifice, this iconic ghat is famous worldwide for the mesmerizing daily evening Maha Ganga Aarti.",
+    "visitorTip": "Arrive by 5:45 PM to grab a front-row stone step or hire a traditional wooden rowing boat from the river side for the most cinematic Aarti views.",
+    "timing": "Open 24 Hours • Daily Aarti: 6:30 PM",
+    "openNow": true,
+    "rating": 4.9,
+    "reviewCount": 3840,
+    "entryFee": "Free",
+    "coverImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Boat Access",
+      "Priest Pujas",
+      "Public Seating",
+      "Photography Allowed",
+      "Shoe Stands Nearby"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-20T10:00:00Z",
+    "sourceName": "Ganga Seva Nidhi & UP Tourism",
+    "sourceUrl": "https://uptourism.gov.in",
+    "isFeatured": true
+  },
+  {
+    "id": "assi-ghat",
+    "name": "Assi Ghat",
+    "hindiName": "अस्सी घाट",
+    "category": "ghats",
+    "subCategory": "Cultural & Southern Ghat",
+    "address": "Shivala, Assi Ghat, Varanasi, UP 221005",
+    "coordinates": {
+      "lat": 25.2891,
+      "lng": 83.0066
+    },
+    "description": "Located where the sacred river Assi meets the Ganga. Famous for the tranquil Subah-e-Banaras morning sunrise programme, yoga sessions, live Indian classical music, and vibrant youth cafes.",
+    "visitorTip": "Best visited at dawn (5:30 AM) for morning Shehnai recitals, tea in earthen kulhads, and peaceful sunrise walks toward Chet Singh Ghat.",
+    "timing": "Open 24 Hours • Morning Aarti at 5:30 AM",
+    "openNow": true,
+    "rating": 4.8,
+    "reviewCount": 2950,
+    "entryFee": "Free",
+    "coverImage": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1571536802807-30451e3955d8?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Sunrise Yoga",
+      "Rooftop Cafes",
+      "Boat Boarding",
+      "Pizzeria Nearby",
+      "Clean Sulabh Complex"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-20T10:00:00Z",
+    "sourceName": "Subah-e-Banaras Committee",
+    "isFeatured": true
+  },
+  {
+    "id": "kashi-vishwanath-temple",
+    "name": "Kashi Vishwanath Temple",
+    "hindiName": "श्री काशी विश्वनाथ मंदिर (स्वर्ण मंदिर)",
+    "category": "temples",
+    "subCategory": "Jyotirlinga Shrine",
+    "address": "Vishwanath Gali, Lahori Tola, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3109,
+      "lng": 83.0107
+    },
+    "description": "One of the twelve supreme Jyotirlingas of Lord Shiva. The newly expanded Vishwanath Corridor connects the golden-spired sanctum sanctorum seamlessly with the banks of the Ganga.",
+    "visitorTip": "Strict security check. Mobile phones, electronic lockers, and leather belts must be deposited at the official facilitation counters. Carry original government ID.",
+    "timing": "03:00 AM – 11:00 PM (Mangala Aarti 3 AM)",
+    "openNow": true,
+    "rating": 4.9,
+    "reviewCount": 5200,
+    "entryFee": "Free (Special Sugam Darshan available)",
+    "coverImage": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": [
+      "Locker Facility",
+      "Wheelchair Access in Corridor",
+      "Prasadam Counter",
+      "Drinking Water",
+      "Escort Help"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-22T08:30:00Z",
+    "sourceName": "Shri Kashi Vishwanath Temple Trust",
+    "sourceUrl": "https://shrikashivishwanath.org",
+    "isFeatured": true
+  },
+  {
+    "id": "sankat-mochan-temple",
+    "name": "Sankat Mochan Hanuman Temple",
+    "hindiName": "संकट मोचन हनुमान मंदिर",
+    "category": "temples",
+    "subCategory": "Hanuman Shrine",
+    "address": "Sankat Mochan Road, Saket Nagar, Durgakund, Varanasi, UP 221005",
+    "coordinates": {
+      "lat": 25.2818,
+      "lng": 82.9987
+    },
+    "description": "Established by Saint Goswami Tulsidas, author of Ramcharitmanas. Dedicated to Lord Hanuman, the reliever of all troubles. Revered for pure spiritual peace and special Besan Laddoo prasadam.",
+    "visitorTip": "Visit on Tuesday or Saturday morning. Watch out for resident monkeys—keep prasad bags discreetly concealed.",
+    "timing": "05:00 AM – 12:00 PM, 03:00 PM – 10:00 PM",
+    "openNow": true,
+    "rating": 4.8,
+    "reviewCount": 2180,
+    "entryFee": "Free",
+    "coverImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Besan Laddu Prasad",
+      "Shoe Stand",
+      "Shaded Courtyard",
+      "Spiritual Discourse Hall"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-20T10:00:00Z",
+    "sourceName": "Sankat Mochan Foundation",
+    "isFeatured": true
+  },
+  {
+    "id": "banaras-hindu-university",
+    "name": "Banaras Hindu University (BHU)",
+    "hindiName": "काशी हिन्दू विश्वविद्यालय (बीएचयू)",
+    "category": "parks",
+    "subCategory": "Historic University & Campus",
+    "address": "Ajagara, Varanasi, UP 221005",
+    "coordinates": {
+      "lat": 25.2677,
+      "lng": 82.9913
+    },
+    "description": "Founded in 1916 by Pandit Madan Mohan Malaviya, this 1,300-acre lush green campus is one of Asia’s largest residential universities, home to the magnificent New Vishwanath Temple (VT) and Bharat Kala Bhavan museum.",
+    "visitorTip": "Rent a bicycle or take an e-rickshaw to visit the marble VT temple, followed by famous cold coffee and chola bhatura at the VT canteen.",
+    "timing": "Campus open 06:00 AM – 09:00 PM",
+    "openNow": true,
+    "rating": 4.8,
+    "reviewCount": 3100,
+    "entryFee": "Free",
+    "coverImage": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Expansive Greenery",
+      "VT Temple Garden",
+      "Museum",
+      "Canteen",
+      "Automated Electric Rickshaws"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-18T14:00:00Z",
+    "sourceName": "Banaras Hindu University Official Portal",
+    "sourceUrl": "https://www.bhu.ac.in",
+    "isFeatured": true
+  },
+  {
+    "id": "varanasi-junction",
+    "name": "Varanasi Junction (Cantt)",
+    "hindiName": "वाराणसी जंक्शन (कैंट रेलवे स्टेशन)",
+    "category": "transport",
+    "subCategory": "Central Rail Terminal",
+    "address": "Cantt Station Road, Hukulganj, Varanasi, UP 221002",
+    "coordinates": {
+      "lat": 25.3283,
+      "lng": 82.9863
+    },
+    "description": "The primary gateway station linking Varanasi with major express trains across India. Features modernized air-conditioned waiting lounges, prepaid auto stands, and direct bus connectivity.",
+    "visitorTip": "Use official Prepaid Auto/Taxi booths located right outside Gate 1 to avoid inflated prices to Godowlia or Assi.",
+    "timing": "Open 24 Hours",
+    "openNow": true,
+    "rating": 4.4,
+    "reviewCount": 4500,
+    "entryFee": "Free (Platform ticket ₹10)",
+    "coverImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "24x7 Waiting Lounge",
+      "Prepaid Taxi Stand",
+      "Cloakroom",
+      "Food Plaza",
+      "Wheelchair Assistance"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-21T11:00:00Z",
+    "sourceName": "Northern Railway / Indian Railways",
+    "sourceUrl": "https://indianrailways.gov.in",
+    "isFeatured": true
+  },
+  {
+    "id": "kashi-chaat-bhandar",
+    "name": "Kashi Chaat Bhandar",
+    "hindiName": "काशी चाट भंडार",
+    "category": "food",
+    "subCategory": "Legendary Street Chaat",
+    "address": "D.53/98, Luxa Road, Near Godowlia Crossing, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3094,
+      "lng": 83.0044
+    },
+    "description": "World-renowned street food institution. Famous for authentic Banarasi hot Tamatar Chaat served in terracotta bowls (kullad), Palak Chaat, and Dahi Gujiya.",
+    "visitorTip": "Order the piping hot Tamatar Chaat sprinkled with desi ghee and spiced sugar syrup. Best visited around 5:30 PM before peak evening rush.",
+    "timing": "04:00 PM – 10:30 PM",
+    "openNow": true,
+    "rating": 4.7,
+    "reviewCount": 2890,
+    "entryFee": "₹50 – ₹150 per item",
+    "coverImage": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "UPI Payments Accepted",
+      "Standing Counters",
+      "Pure Vegetarian",
+      "Desi Ghee Delicacies"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-23T16:00:00Z",
+    "sourceName": "Local Culinary Survey",
+    "isFeatured": true
+  },
+  {
+    "id": "blue-lassi-shop",
+    "name": "Blue Lassi Shop",
+    "hindiName": "ब्लू लस्सी शॉप",
+    "category": "food",
+    "subCategory": "Artisanal Hand-Churned Lassi",
+    "address": "CK 12/1, Kunj Gali, Near Manikarnika Ghat, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3116,
+      "lng": 83.0132
+    },
+    "description": "Operating since 1925 in narrow alleyways, hand-churning thick curd with over 80 seasonal fruit and dry-fruit toppings served in earthen cups with passport photos from travelers worldwide.",
+    "visitorTip": "Try the Pomegranate-Pistachio or Banana-Almond Lassi topped with fresh thick Malai and Rabri.",
+    "timing": "08:00 AM – 10:00 PM",
+    "openNow": true,
+    "rating": 4.6,
+    "reviewCount": 1980,
+    "entryFee": "₹60 – ₹180",
+    "coverImage": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Seating Bench",
+      "Over 80 Varieties",
+      "Traveller Wall of Fame",
+      "Kulhad Served"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-20T10:00:00Z",
+    "sourceName": "Local Culinary Survey"
+  },
+  {
+    "id": "chet-singh-ghat",
+    "name": "Chet Singh Ghat & Fort",
+    "hindiName": "चेत सिंह घाट एवं किला",
+    "category": "ghats",
+    "subCategory": "Fortified Historic Ghat",
+    "address": "Shivala Ghats, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.2977,
+      "lng": 83.0079
+    },
+    "description": "Imposing 18th-century stone fortress built by Maharaja Chet Singh, site of the fierce battle against Warren Hastings in 1781. The massive bastions and stone ramparts offer breathtaking photography.",
+    "visitorTip": "In the golden hour (4:30 PM – 5:30 PM), the sandstone fortress reflects magnificently in the calm river waters.",
+    "timing": "Open 24 Hours",
+    "openNow": true,
+    "rating": 4.7,
+    "reviewCount": 1120,
+    "entryFee": "Free",
+    "coverImage": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Fort Architecture Views",
+      "Quiet Steps",
+      "Photography Hotspot",
+      "Boat Stop"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-19T09:00:00Z",
+    "sourceName": "Varanasi Heritage Registry"
+  },
+  {
+    "id": "manikarnika-ghat",
+    "name": "Manikarnika Ghat",
+    "hindiName": "मणिकर्णिका घाट (महाश्मशान)",
+    "category": "ghats",
+    "subCategory": "Sacred Cremation Ghat",
+    "address": "Near Chowk, Manikarnika Gali, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3106,
+      "lng": 83.0142
+    },
+    "description": "The holiest cremation ghat where fires have burned continuously for millennia. According to Hindu belief, attaining Moksha (liberation from cycle of rebirth) occurs here.",
+    "visitorTip": "Maintain utmost solemnity and quiet respect. Photography of the pyres is strictly prohibited and offensive to grieving families.",
+    "timing": "Open 24 Hours (Eternal Fire)",
+    "openNow": true,
+    "rating": 4.6,
+    "reviewCount": 2200,
+    "entryFee": "Free",
+    "coverImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Kund Bathing Reservoir",
+      "Historic Temples",
+      "Boat Navigation Point"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-20T10:00:00Z",
+    "sourceName": "Kashi Moksha Dham Registry"
+  },
+  {
+    "id": "kaal-bhairav-temple",
+    "name": "Kaal Bhairav Mandir",
+    "hindiName": "काल भैरव मंदिर (काशी के कोतवाल)",
+    "category": "temples",
+    "subCategory": "Guardian Deity of Kashi",
+    "address": "K-32/22, Bharonath, Golgadda, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3182,
+      "lng": 83.0118
+    },
+    "description": "Dedicated to Kaal Bhairav, the fierce manifestation of Shiva revered as the Kotwal (Chief Police Officer/Guardian) of Varanasi. Tradition dictates seeking his blessings before entering or leaving the city.",
+    "visitorTip": "Priests tie black consecrated protective threads (Ganda) on wrists. Purchase mustard oil and black sesame seeds outside for the holy lamp.",
+    "timing": "05:00 AM – 01:30 PM, 04:30 PM – 10:30 PM",
+    "openNow": true,
+    "rating": 4.8,
+    "reviewCount": 1650,
+    "entryFee": "Free",
+    "coverImage": "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Shoe Stand",
+      "Prasad Stalls",
+      "Traditional Pujas"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-21T09:00:00Z",
+    "sourceName": "Temple Administration Board"
+  },
+  {
+    "id": "aum-cafe-assi",
+    "name": "Aum Café",
+    "hindiName": "ॐ कैफे",
+    "category": "cafes",
+    "subCategory": "Organic & Ayurvedic Cafe",
+    "address": "B.1/201, Assi Ghat, Near Ganges View Hotel, Varanasi, UP 221005",
+    "coordinates": {
+      "lat": 25.2905,
+      "lng": 83.007
+    },
+    "description": "Charming organic cafe run with love, serving Ayurvedic lemon-ginger honey teas, vegan pancakes, freshly roasted South Indian pour-overs, and home-baked gluten-free treats.",
+    "visitorTip": "Great spot for remote work or peaceful reading with fast Wi-Fi and chilled cinnamon iced teas.",
+    "timing": "08:00 AM – 09:30 PM (Closed Mondays)",
+    "openNow": true,
+    "rating": 4.7,
+    "reviewCount": 840,
+    "entryFee": "₹150 – ₹350 per person",
+    "coverImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Free High-Speed Wi-Fi",
+      "Vegan Options",
+      "Organic Coffee",
+      "Cozy Reading Bookshelf"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-22T12:00:00Z",
+    "sourceName": "Public Business Listing"
+  },
+  {
+    "id": "brown-bread-bakery",
+    "name": "Brown Bread Bakery & Rooftop",
+    "hindiName": "ब्राउन ब्रेड बेकरी",
+    "category": "cafes",
+    "subCategory": "European Bakery & Rooftop",
+    "address": "D 25/42, Pandey Ghat, Bangali Tola, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3045,
+      "lng": 83.009
+    },
+    "description": "Varanasi’s first organic bakery providing artisanal European sourdough, over 30 varieties of cheese, Italian pasta, and evening live Indian classical violin and sitar performances on the rooftop.",
+    "visitorTip": "Head to the 4th floor rooftop terrace around sunset for organic pasta with uninterrupted views of the river.",
+    "timing": "07:00 AM – 10:00 PM",
+    "openNow": true,
+    "rating": 4.6,
+    "reviewCount": 1420,
+    "entryFee": "₹200 – ₹500 per person",
+    "coverImage": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Rooftop Ganga View",
+      "Artisanal Cheeses",
+      "Live Sitar Music",
+      "Air Conditioned Floor"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-20T10:00:00Z",
+    "sourceName": "Public Business Listing"
+  },
+  {
+    "id": "sunderlal-bhu-hospital",
+    "name": "Sir Sunderlal Hospital & Trauma Centre (BHU)",
+    "category": "hospitals",
+    "subCategory": "Premier Tertiary Hospital",
+    "address": "BHU Main Campus Road, Banaras Hindu University, Varanasi, UP 221005",
+    "coordinates": {
+      "lat": 25.275,
+      "lng": 82.996
+    },
+    "description": "State-of-the-art super-speciality government teaching hospital with 24/7 Level-1 emergency trauma centre, cardiology, neurology, and advanced critical care units.",
+    "visitorTip": "Emergency entrance is accessible directly via BHU South Gate on Lanka road.",
+    "timing": "24 Hours Emergency & Trauma Care",
+    "openNow": true,
+    "rating": 4.5,
+    "reviewCount": 1890,
+    "entryFee": "Nominal Government Rates",
+    "coverImage": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "24x7 Trauma Ward",
+      "Blood Bank",
+      "Pharmacy Inside",
+      "Ambulance Helplines",
+      "ICU"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-24T06:00:00Z",
+    "sourceName": "BHU Institute of Medical Sciences",
+    "sourceUrl": "https://www.bhu.ac.in/ims",
+    "contactPhone": "+91-542-2307500"
+  },
+  {
+    "id": "apollo-pharmacy-godowlia",
+    "name": "Apollo 24/7 Pharmacy Godowlia",
+    "category": "pharmacies",
+    "subCategory": "24x7 Chemist Store",
+    "address": "Near Godowlia Chauraha, Luxa Road, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3098,
+      "lng": 83.004
+    },
+    "description": "Well-stocked round-the-clock pharmacy offering emergency medicines, first-aid kits, water purification tablets, ORS, prescription drugs, and baby care essentials.",
+    "visitorTip": "Accepts all credit cards, UPI, and maintains cold storage for insulin and sensitive medicines.",
+    "timing": "Open 24 Hours / 7 Days",
+    "openNow": true,
+    "rating": 4.7,
+    "reviewCount": 380,
+    "entryFee": "Retail rates",
+    "coverImage": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "24x7 Counter",
+      "Cold Storage Drugs",
+      "Digital Payments",
+      "First Aid Supplies"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-22T10:00:00Z",
+    "sourceName": "Retail Chemist Registry",
+    "contactPhone": "+91-542-2451290"
+  },
+  {
+    "id": "sbi-atm-godowlia",
+    "name": "State Bank of India 24x7 ATM Hub",
+    "hindiName": "एसबीआई एटीएम हब (गोदौलिया)",
+    "category": "atms",
+    "subCategory": "Multi-Machine ATM & CDM",
+    "address": "Main Chowk Road, Near Girjaghar Crossing, Godowlia, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.311,
+      "lng": 83.0025
+    },
+    "description": "High-capacity State Bank of India ATM center with 4 cash-dispensing kiosks supporting domestic and international Visa/Mastercard cards with backup solar generators.",
+    "visitorTip": "Always carry a small amount of cash in ₹100 and ₹500 denominations for local boatmen, tea stalls, and rickshaws.",
+    "timing": "Open 24 Hours",
+    "openNow": true,
+    "rating": 4.4,
+    "reviewCount": 210,
+    "entryFee": "Standard ATM fees",
+    "coverImage": "https://images.unsplash.com/photo-1556742049-0a67c5574f73?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "4 Active Kiosks",
+      "24x7 Security Guard",
+      "International Card Support",
+      "Air Conditioned"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-23T11:00:00Z",
+    "sourceName": "Bank Kiosk Registry"
+  },
+  {
+    "id": "namo-ghat",
+    "name": "Namo Ghat (Khidkiya Ghat)",
+    "hindiName": "नमो घाट (खिड़किया घाट)",
+    "category": "ghats",
+    "subCategory": "Modernized Riverfront Promenade",
+    "address": "Rajghat Road, Northern Waterfront, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3347,
+      "lng": 83.0331
+    },
+    "description": "Newly developed modern riverfront featuring iconic large metal folded-hands \"Namaste\" sculptures, food court, CNG boat refueling hub, open amphitheatre, and helipad.",
+    "visitorTip": "Very pedestrian-friendly and wheelchair accessible with dedicated walkways, evening fountain lightings, and boat rides.",
+    "timing": "Open 24 Hours",
+    "openNow": true,
+    "rating": 4.8,
+    "reviewCount": 2450,
+    "entryFee": "₹10 entrance ticket during peak hours",
+    "coverImage": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Wheelchair Ramps",
+      "Food Court",
+      "CNG Boat Station",
+      "Clean Toilets",
+      "Parking Area"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-21T15:00:00Z",
+    "sourceName": "Varanasi Smart City Limited",
+    "sourceUrl": "https://varanasismartcity.gov.in",
+    "isFeatured": true
+  },
+  {
+    "id": "sarnath-archaeological-site",
+    "name": "Sarnath Archaeological Site & Dhamek Stupa",
+    "hindiName": "सारनाथ पुरातत्व परिसर एवं धमेक स्तूप",
+    "category": "libraries",
+    "subCategory": "Buddhist Heritage Monument",
+    "address": "Sarnath, Varanasi, UP 221007 (10 km from Cantt)",
+    "coordinates": {
+      "lat": 25.3811,
+      "lng": 83.0214
+    },
+    "description": "Where Lord Buddha preached his first sermon (Dhammacakkappavattana Sutta) after attaining enlightenment. Home to the massive 43-meter cylindrical Dhamek Stupa and Ashoka Lion Pillar.",
+    "visitorTip": "Combine with the adjacent Archaeological Museum housing the original Ashokan Lion Capital (National Emblem of India). Closed Fridays.",
+    "timing": "08:00 AM – 06:00 PM",
+    "openNow": true,
+    "rating": 4.9,
+    "reviewCount": 3900,
+    "entryFee": "₹25 (Indian Citizens) / ₹300 (Foreigners)",
+    "coverImage": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "ASI Museum",
+      "Deer Park",
+      "Audio Guides",
+      "Garden Pathways",
+      "Clean Restrooms"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-19T10:00:00Z",
+    "sourceName": "Archaeological Survey of India (ASI)",
+    "sourceUrl": "https://asi.nic.in"
+  },
+  {
+    "id": "sulabh-complex-assi",
+    "name": "Sulabh International Deluxe Toilet Complex",
+    "hindiName": "सुलभ इंटरनेशनल डीलक्स शौचालय (अस्सी)",
+    "category": "toilets",
+    "subCategory": "Sanitation Facility",
+    "address": "Upper Promenade, Assi Ghat, Varanasi, UP 221005",
+    "coordinates": {
+      "lat": 25.2887,
+      "lng": 83.0062
+    },
+    "description": "Maintained public sanitation complex with running water, clean European and Indian water-closets, bathing cubicles, and handwashing basins.",
+    "visitorTip": "Keep small coins/cash handy for the ₹5 maintenance fee.",
+    "timing": "05:00 AM – 11:00 PM",
+    "openNow": true,
+    "rating": 4.3,
+    "reviewCount": 160,
+    "entryFee": "₹5 – ₹10",
+    "coverImage": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "Western & Indian Toilets",
+      "Bathing Showers",
+      "Running Tap Water",
+      "Disability Friendly"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-24T08:00:00Z",
+    "sourceName": "Sulabh International / Nagar Nigam"
+  },
+  {
+    "id": "godowlia-multi-level-parking",
+    "name": "Godowlia Multi-Level Smart Parking",
+    "hindiName": "गोदौलिया स्मार्ट मल्टीलेवल पार्किंग",
+    "category": "parking",
+    "subCategory": "Smart Parking Lot",
+    "address": "Near Godowlia Crossing & Girjaghar, Varanasi, UP 221001",
+    "coordinates": {
+      "lat": 25.3102,
+      "lng": 83.003
+    },
+    "description": "Modern municipal 4-tier parking garage. Vehicles entering the pedestrianized Dashashwamedh corridor must park here.",
+    "visitorTip": "Crucial for visitors driving cars or hired two-wheelers. Cars cannot enter the ghat zone past this point after 9:00 AM.",
+    "timing": "Open 24 Hours",
+    "openNow": true,
+    "rating": 4.5,
+    "reviewCount": 310,
+    "entryFee": "Two-wheelers: ₹20 / Four-wheelers: ₹50 for 3 hours",
+    "coverImage": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1200&q=80",
+    "amenities": [
+      "EV Fast Chargers",
+      "CCTV Surveillance",
+      "Automated Ticketing",
+      "Restroom Facility"
+    ],
+    "status": "curated",
+    "lastUpdated": "2026-08-23T14:00:00Z",
+    "sourceName": "Varanasi Smart City Limited",
+    "sourceUrl": "https://varanasismartcity.gov.in"
+  }
+]
